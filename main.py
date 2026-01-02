@@ -6,10 +6,10 @@ output_names = mido.get_output_names()
 print("Available MIDI output ports:")
 for i, name in enumerate(output_names):
     print(f"{i}: {name}")
-# 如果 LoopMIDI Port 是列表中的第一个， 就直接使用
+# LoopMIDI First
 loopmidi_port_name = None
 for name in output_names:
-    if "loopmidi" in name.lower(): # 尝试匹配名称
+    if "loopmidi" in name.lower(): 
         loopmidi_port_name = name
         break
 
