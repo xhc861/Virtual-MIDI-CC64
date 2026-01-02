@@ -1,17 +1,11 @@
 import mido
 import time
 
-# 获取可用的输出端口列表
-output_names = mido.get_output_names()
-print("Available MIDI output ports:")
-for i, name in enumerate(output_names):
-    print(f"{i}: {name}")
+# 获
 # LoopMIDI First
 loopmidi_port_name = None
 for name in output_names:
-    if "loopmidi" in name.lower(): 
-        loopmidi_port_name = name
-        break
+    if "loopmidi
 
 if loopmidi_port_name is None:
     print("LoopMIDI port not found. Please make sure LoopMIDI is running and a port is created.")
